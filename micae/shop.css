@@ -1,0 +1,367 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(AvenirLTStd-Roman.otf);
+  }
+  @font-face{
+    font-family: mySecFont;
+    src: url(NeueMachina-Regular.otf);
+  }
+ 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    display: block;
+    gap: 30%;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 10px;
+    padding: 10px 70px;
+    height: 90px;
+}
+.logo{
+    animation: lightSpeedInLeft;
+    animation-duration: 3s;
+    margin-top: 50px;
+    
+}
+.h1{
+    font-family: myfirstFont;
+    font-size: 61px;
+    margin-bottom: 120px;
+    margin-left: 100px;
+    margin-top: 70px;
+    width: 500px;
+    color: #fff;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    
+}
+.h1 span{
+    color: #ff23da;
+}
+.bckgrnd{
+    background-color: #000000;
+    width: 150px;
+    height: 100px;
+    margin-left: 700px;
+    padding: 0px 25px;
+    border-radius: 20px;
+}
+.hdbtn{
+    
+    
+        background-color: rgb(8, 8, 8);
+        color: white;
+        font-weight: bold;
+        border: 2px solid rgb(241, 1, 101);
+        font-size: 15px;
+        width: 130px;
+        height: 55px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        
+}
+body{
+    padding: 0px 5px;
+    background-color: #0f0f0f;
+   
+}
+
+h4{
+    margin-top: 270px;
+    font-family: myFirstFont;
+    font-size: 35px;
+    margin-left: 990px;
+    color:#fff;
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+h6{
+    font-size: 23px;
+    font-family: myFirstFont;
+    font-weight: 5px;
+    color: #fff;
+    margin-left: 990px;
+    animation: fadeIn;
+    animation-duration: 3s;
+
+}
+h5{
+    color: #fff;
+    font-size: 29px;
+    font-family: mySecFont;
+    margin-top: 50px;
+    margin-bottom:85px;
+    width: 100px;
+    letter-spacing:10px;
+    margin-left: 0px;
+   
+}
+.sec1{
+    padding: 60px 0px;
+    display: flex;
+    gap: 7%;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+
+a{
+    text-decoration: none;
+   
+}
+
+.items{
+    background-color: rgb(8, 8, 8);
+    height: 430px;
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+.items:hover .cart{
+    display: block;
+}
+.linebreak{
+    border: 2px bold #000000;
+    width: 90%;
+    height: 2px;
+    background-color:black;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.space{
+    padding: 30px;
+}
+.carticon{
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    background: url('./icons8-shopping-cart-30.png');
+    width: 35px;
+    background-repeat: no-repeat;
+    border: 0;
+    display: block;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    animation: lightSpeedInLeft;
+    animation-duration: 3s;
+}
+p{
+    color: #ff23da;
+    font-family: myFirstFont;
+}
+.pcs{
+    color: gray;
+    
+}
+
+.price{
+    color: white;
+    margin-top: 0px;
+    
+}
+.itemsimg{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+
+.cart{
+    background-color: #f1ecec;
+    color: #ff23da;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 125px;
+    font-family: mySecFont;
+    font-size: 15px;
+    margin: 10px 0px;
+    display: none;
+}
+.container{
+    background-color: #fff;
+    width: 500px;
+    height: fit-content;
+    position: fixed;
+    right: 70px;
+    top: 70px;
+    border-radius: 15px;
+    padding: 10px;
+    transform:translateY(-150%);
+    transition: transform 450ms ease-in;
+    z-index: 10;
+    
+}
+.container[data-visible = "true"]{
+    transform: translateX(10%);
+  }
+.cartsec h3{
+    text-align: center;
+    font-family: myFirstFont;
+}
+h3 span{
+    color: rgb(122, 121, 121);
+    font-size:medium;
+}
+.cartitems{
+    display: flex;
+    align-content: center;
+    gap: 7%;
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+.purchase{
+    background-color: #ff23da;
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left:150px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.total{
+    
+    margin-top:50px;
+    margin-left: 370px;
+}
+
+.cartitems input{
+    width: 25px;
+    padding: 5px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.cartitems p{
+    color: #000000;
+    padding-top: 25px;
+    width: 50px;
+}
+.container h6{
+    background-color: yellowgreen;
+}
+.cartitems button {
+    background-color: #0f0f0f;
+    color: #ff23da;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: mySecFont;
+    font-size: 15px;
+}
+.cartimg{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.quantity{
+    border-radius: 5px;
+    height: 7px;
+    width: 16px;
+    border: 2px bold #ff23da;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px bold #000000;
+}
+.notify{
+    background-color: #ff23da;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 975px;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:1000px){
+    header img{
+        margin-left: -30px;
+        margin-top: 10px;
+        width:45px ;
+        height: 50px;
+      }
+      .h1{
+        font-family: myfirstFont;
+        font-size: 41px;
+        margin-top: 100px;
+        margin-bottom: 90px;
+        margin-left: -40px;
+        width: 310px;
+        color: #fff;
+        
+        
+    }
+    h4{
+        margin-top: 350px;
+        font-family: myFirstFont;
+        font-size: 28px;
+        margin-left: 30px;
+        color:#fff;
+        
+        
+    }
+    h6{
+        font-size: 18px;
+        font-family: myFirstFont;
+        font-weight: 5px;
+        color: #fff;
+        margin-left: 30px;
+        
+    
+    }
+    .sec1{
+        padding: 60px 0px;
+        display: block;
+        gap: 7%;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        
+    }
+    .notify{
+        background-color: #ff23da;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        top: 0;
+        right: 15px;
+        font-size: 11px;
+        margin-bottom: 25px;
+    }
+    .container{
+        width: 340px;
+        margin-right: 37px;
+        margin-top: 250px;
+        transform: translateY(-350%);
+        
+    }
+    .container[data-visible = "true"]{
+        transform: translateX(19%);
+    }
+    .purchase{
+        margin-left: 120px;
+        width: 100px;
+    }
+    .total{
+        margin-left: 240px;
+        margin-top: 30px;
+    }
+    .cart{
+        display: block;
+    }
+}

@@ -1,0 +1,178 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(AvenirLTStd-Roman.otf);
+  }
+  @font-face{
+    font-family: mySecFont;
+    src: url(NeueMachina-Regular.otf);
+  }
+ 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    padding: 10px 25px;
+    padding-bottom: 100px;
+    background-color: #0f0f0f;
+    
+
+}
+
+  header{
+  
+    background-color: #0f0f0f;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    
+  }
+  header button{
+
+    background-color: #0f0f0f;
+    color: #ff23da;
+    width: 140px;
+    height: 49px;
+    border-radius: 5px;
+    border: 1px solid #ff23da;
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 17px;
+    font-weight: bolder;
+
+  }
+  .mainsec{
+    display: flex;
+    gap: 15%;
+    padding-bottom:800px;
+  }
+  .img{
+    width:380px;
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  .imgsec{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10%;
+    margin-left: 320px;
+    margin-bottom: 100px;
+    height: 100px;
+    padding: bottom 100px;
+    animation: fadeInUpBig;
+    animation-duration: 2s;
+  }
+  h1{
+    font-size:70px;
+    font-family: myFirstFont;
+    font-weight: bolder;
+    writing-mode: sideways-lr;
+    line-height: 76px;
+    letter-spacing: 18px;
+    margin-top: 0px;
+    margin-bottom: 350px;
+    margin-left: 100px;
+    position: fixed;
+    color: #fff;
+    animation: slideInLeft;
+    animation-duration: 1s;
+    
+  }
+  h1 div{
+    color: #ff23da;
+  }
+  header a{
+    text-decoration: none;
+  }
+  header img {
+    margin-left: 100px;
+    margin-top: 25px;
+  }
+  h4{
+    margin-top: 50px;
+    font-family: myFirstFont;
+    font-weight: lighter;
+    font-size: 19px;
+    width: 100px;
+    margin-left:10px;
+    color:#fff;
+    
+}
+  h5{
+    color: #fff;
+    font-size: 29px;
+    font-family: mySecFont;
+    margin-top: 40px;
+    margin-bottom:85px;
+    width: 100px;
+    letter-spacing:10px;
+    margin-left: 110px;
+    margin-right: 690px;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  position: sticky;
+  animation:fadeInUpBig;
+  animation-duration: 5s;
+}
+
+.copyright{
+  color: #fff;
+  font-family: mySecFont;
+  text-align: center;
+  animation: backInUp;
+  animation-duration: 2s;
+}
+
+@media screen and (max-width:1000px){
+  .mainsec{
+    display: block;
+    gap: 5%;
+  }
+
+  .imgsec{
+    margin-left: 50px;
+    grid-template-columns: auto;
+  }
+  .img{
+    width: 250px;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  header{
+    gap: 50%;
+  }
+
+  header img{
+    margin-left: 0px;
+    width:50px ;
+        height: 60px;
+  }
+  header button{
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+  h1{
+    writing-mode:unset;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 10px;
+    margin-left: 10px;
+    position: static;
+    margin-bottom: 50px;
+  }
+  footer{
+    margin-top: 650px;
+  }
+}

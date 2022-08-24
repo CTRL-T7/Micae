@@ -1,0 +1,137 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(AvenirLTStd-Roman.otf);
+  }
+  @font-face{
+    font-family: mySecFont;
+    src: url(NeueMachina-Regular.otf);
+  }
+ 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+    border-bottom: 2px solid rgb(252, 117, 162);
+    box-shadow: 10px;
+    padding: 10px 50px;
+    height: 70px;
+}
+
+h5{
+    color: black;
+    font-size: 19px;
+    font-family: myFirstFont;
+    margin-top: 25px;
+}
+
+
+.container{
+    background-color: rgb(8, 8,8);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 100px  100px;
+}
+.sec{
+    background-color: white;
+    width: 900px;
+    height: 650px;
+    border-radius: 20px;
+    animation: fadeIn;
+    animation-duration: 2s;
+
+}
+header a{
+    text-decoration: none;
+}
+h6{
+    text-align: center;
+    font-family: myFirstFont;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.seg1{
+    padding: 40px 80px;
+    height: 580px;
+    
+}
+
+.seg1 p{
+    font-family: myFirstFont;
+    
+}
+.inp{
+    width: 340px;
+    height: 45px;
+    border: 1px solid  #ff23da ;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.diffinp{
+    width: 340px;
+    height: 105px;
+    margin-bottom: 100px;
+    border: 1px solid #ff23da;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
+
+.segment{
+    display: flex;
+
+}
+
+    .seg2{
+        padding: 100px 0px;
+    }
+
+.seg2 p{
+        margin-bottom: 30px;
+        font-family: myFirstFont;
+}
+
+.icons{
+    
+    margin-top: 70px;
+    display: flex;
+    gap: 4%;
+    position: relative;
+    z-index: 1;
+    top: -40px;
+    right: -20px;
+  }
+  .logo1{
+    margin-left: 50px;
+  }
+
+  @media screen and (max-width:1000px){
+    .sec{
+        width: 300px;
+        animation: fadeInUp;
+        animation-duration: 1s;
+    }
+    h6{
+        font-size: 15px;
+    }
+    .inp{
+        width: 270px;
+    }
+    .diffinp{
+        width: 270px;
+    }
+    .seg1{
+        padding: 40px 10px;
+    }
+    .segment{
+        flex-direction: column;
+        align-content: center;
+    }
+    .logo1{
+        margin-left: 100px;
+    }
+ }
